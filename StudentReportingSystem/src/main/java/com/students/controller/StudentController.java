@@ -1,7 +1,8 @@
 package com.students.controller;
 
-import org.hibernate.mapping.List;
+//import org.hibernate.mapping.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -12,7 +13,7 @@ import com.students.model.Student;
 import com.students.service.MarksService;
 import com.students.service.StudentService;
 
-@RestController
+@Controller
 public class StudentController {
     @Autowired
     private StudentService studentService;

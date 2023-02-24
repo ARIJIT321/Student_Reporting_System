@@ -1,12 +1,14 @@
 package com.students.model;
 
 import org.springframework.data.elasticsearch.annotations.Document;
-
-import jakarta.persistence.Id;
+import org.springframework.data.annotation.Id;
+//import jakarta.persistence.Id;
 import lombok.Data;
+import lombok.Getter;
 
 @Data
 @Document(indexName = "marks")
+@Getter
 public class Marks {
 
 	@Id

@@ -12,4 +12,6 @@ public interface MarksService {
 	
 	public List<Marks> findAll();
 	
+	public double getAverageMarksOfSubject(String subject);
+	
 }
